@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0d0d0f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #f5c400;
+  letter-spacing: 5px;
+  margin: 12px;
+  font-size: 24px;
+}
+
+.minion-photo {
+  height: 230px;
+  background: #18181c;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#answerImage {
+  max-width: 180px;
+  max-height: 210px;
+  object-fit: contain;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 14px;
+  background: #1b1b20;
+  color: white;
+  border: 2px solid #f5c400;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+#searchResults {
+  background: #18181c;
+  border: 2px solid #f5c400;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.result {
+  background: #222229;
+  color: white;
+  padding: 10px 12px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+
+.result strong {
+  font-size: 18px;
+}
+
+.result small {
+  display: block;
+  color: #cfcfcf;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+#submitBtn {
+  width: 100%;
+  padding: 14px;
+  background: #f5c400;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#guesses {
+  margin-top: 12px;
+  padding: 0 6px;
+}
+
+.guess-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.box {
+  min-height: 48px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.correct {
+  background: #2f8f46;
+}
+
+.wrong {
+  background: #3a3a3a;
+}
+
+#message {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 12px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .minion-photo {
+    height: 220px;
+  }
+
+  #answerImage {
+    max-width: 160px;
+    max-height: 200px;
+  }
+
+  #searchResults {
+    max-height: 160px;
+  }
+}
